@@ -1,5 +1,5 @@
 # Ignore Silex
-/phpunit.xml
-/vendor
-/build
-/composer.lock
+/api/phpunit.xml
+/api/vendor
+/api/build
+/api/composer.lock
