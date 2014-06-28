@@ -1,0 +1,29 @@
+getAll:
+  path: /meetup
+  defaults: { _controller: 'Meetup\MeetupController::getAllAction' }
+  methods:  [GET]
+
+getOneById:
+  path: /meetup/{id}
+  defaults: { _controller: 'Meetup\MeetupController::getOneAction' }
+  methods:  [GET]
+  
+getOneByName:
+  path: /meetup/search/{name}
+  defaults: { _controller: 'Meetup\MeetupController::getOneSearchAction' }
+  methods:  [GET]
+  
+deleteOne:
+  path: /meetup/{id}
+  defaults: { _controller: 'Meetup\MeetupController::deleteOneAction' }
+  methods:  [DELETE]
+
+addOne:
+  path: /meetup
+  defaults: { _controller: 'Meetup\MeetupController::addOneAction' }
+  methods:  [POST]
+
+editOne:
+  path: /meetup/{id}
+  defaults: { _controller: 'Meetup\MeetupController::editOneAction' }
+  methods:  [PUT]

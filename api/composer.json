@@ -1,0 +1,21 @@
+{
+    "name": "Meetup Crud Rest",
+    "description": "Example of Silex Resource provider for Angular js",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Jorge Bailo"
+        }
+    ],
+    "require": {
+        "silex/silex": "1.0.*@dev",
+        "doctrine/dbal": "2.3.4",
+        "symfony/yaml":"v2.2.0",
+        "symfony/config":"v2.2.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "": "lib/"
+        }
+    }
+}

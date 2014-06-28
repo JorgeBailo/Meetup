@@ -1,0 +1,115 @@
+* {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+.header {
+	padding-top: 5px;
+}
+
+.leftArea {
+	position: absolute;
+	left: 10px;
+	top: 70px;
+	bottom: 20px;
+	width: 300px;
+	border:solid 1px #CCCCCC;
+	overflow-y: scroll;
+}
+
+.mainArea {
+	position: absolute;
+	top: 70px;
+	bottom: 20px;
+	left:350px;
+	width:400px;
+}
+
+.rightArea {
+	position: absolute;
+	top: 70px;
+	bottom: 20px;
+	left:750px;
+	width:270px;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-top: 0px;
+}
+
+li a { 
+	text-decoration:none;
+	display: block;
+	color: #000000;
+	border-bottom:solid 1px #CCCCCC;
+	padding: 8px;
+}
+
+li a:hover {
+	background-color: #DCDCDC;
+	color: #FFFFFF;
+}
+
+input, textarea {
+	border:1px solid #ccc;
+	min-height:30px;
+	outline: none;
+}
+
+.mainArea input {
+	margin-bottom:15px;
+	margin-top:5px;
+	width:280px;
+}
+
+textarea {
+	margin-bottom:15px;
+  	margin-top:5px;
+	width: 460px;
+	height: 178px;
+}
+
+label {
+	display:block;
+}
+
+button {
+	padding:6px;
+}
+
+
+#searchKey {
+	width:160px;
+}
+
+.info, .success, .warning, .error, .validation {
+	border: 1px solid;
+	margin: 10px 0px;
+	padding:15px 10px 15px 50px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	width: 400px;
+}
+
+.info {
+	color: #00529B;
+	background-color: #BDE5F8;
+	background-image: url('../img/info.png');
+}
+.success {
+	color: #4F8A10;
+	background-color: #DFF2BF;
+	background-image:url('../img/success.png');
+}
+.warning {
+	color: #9F6000;
+	background-color: #FEEFB3;
+	background-image: url('../img/warning.png');
+}
+.error {
+	color: #D8000C;
+	background-color: #FFBABA;
+	background-image: url('../img/error.png');
+}

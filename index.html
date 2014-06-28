@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Meetups</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+    </head>
+
+    <body>
+
+    <div class="header">
+        <input type="text" id="searchKey"/>
+        <button id="btnSearch">Search</button>
+        <button id="btnAdd">New Meetup</button>
+    </div>
+
+    <div class="leftArea">
+        <ul id="meetupList"></ul>
+    </div>
+
+    <form id="meetupForm">
+        <div class="mainArea">
+            <label>Id:</label>
+            <input id="meetupId" name="id" type="text" disabled />
+
+            <label>Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label>Date:</label>
+            <input type="text" id="date" name="date"/>
+
+            <label>Place:</label>
+            <input type="text" id="place" name="place"/>
+
+            <label>Speaker:</label>
+            <input type="text" id="speaker" name="speaker"/>
+
+            <div style="clear: both"></div>
+            
+            <button id="btnSave">Save</button>
+            <button id="btnDelete">Delete</button>
+
+        </div>
+
+        <div class="rightArea">
+            <label>Description:</label>
+            <textarea id="description" name="description"></textarea>
+            <div id="message"></div>
+        </div>
+
+    </form>
+
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
