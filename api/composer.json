@@ -1,6 +1,6 @@
 {
     "name": "Meetup Crud Rest",
-    "description": "Example of Silex Resource provider for Angular js",
+    "description": "Example of Silex Resource provider for jQuery",
     "minimum-stability": "stable",
     "authors": [
         {
