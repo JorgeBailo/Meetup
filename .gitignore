@@ -3,3 +3,4 @@
 /api/vendor
 /api/build
 /api/composer.lock
+*.komodoproject
