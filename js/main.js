@@ -185,7 +185,7 @@ function setMessage(type, message){
 	$('#message').html(message);
 }
 
-function delMessage(type, message){
+function delMessage(){
 	$('#message').removeClass();
 	$('#message').html("");
 }
