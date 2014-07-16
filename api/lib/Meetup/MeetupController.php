@@ -29,7 +29,7 @@ class MeetupController {
 
     // Add Meetup
     public function addOneAction(Application $app, Request $request){
-        $meetup = json_decode($request->getContent());;
+        $meetup = json_decode($request->getContent());
 
         $newMeetup = [
             'id'      => (integer)$app['db']->fetchColumn("SELECT max(id) FROM meetups") + 1,
@@ -46,7 +46,7 @@ class MeetupController {
 
     // Edit Meetup
     public function editOneAction($id, Application $app, Request $request){
-        $meetup = json_decode($request->getContent());;
+        $meetup = json_decode($request->getContent());
         
         $newMeetup = [
             'name'      => $meetup->name,
@@ -56,7 +56,7 @@ class MeetupController {
             'description' => $meetup->description
         ];
         
-        $app['db']->update('meetups', $newMeetup, ['id' => $id]);
+        $app['db']->update('meetups', $newMeetup, ['ID' => $id]);
         return new JsonResponse($resource);
     }
 }
